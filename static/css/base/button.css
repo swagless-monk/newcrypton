@@ -1,0 +1,65 @@
+/* BUTTON ANIMATION */
+.Btn {
+    height: 40px;
+    width: auto;
+    box-sizing: border-box;
+    border: none;
+    border: 5px solid inherit;
+    border-top-left-radius: 30px 50%;
+    border-bottom-right-radius: 30px 50%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.Btn:focus {
+    outline: none;
+}
+.Btn:hover {
+    border-radius: 20px;
+}
+.center {
+    width: auto;
+    height: 40px;
+}
+
+.btn {
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #678A4A;
+    outline: none;
+    transform: skew(-15deg);
+    border-radius: 3%;
+    transition: 1s ease-in-out;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-dasharray: 180 480;
+    stroke-dashoffset: 180;
+    transition: 1s ease-in-out;
+}
+  
+.btn:hover {
+    transition: 1s ease-in-out;
+    opacity: 1;
+    box-shadow: 5px 5px black, 4px 4px black, 3px 3px black;
+}
+  
+.btn:hover svg {
+    stroke-dashoffset: -480;
+    border-radius: 20px;
+}
+
+.btn span {
+    color: white;
+    font-weight: bolder;
+    opacity: 1;
+}
