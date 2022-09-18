@@ -1,0 +1,55 @@
+:root {
+    --primary: #efeada;
+    --secondary: lightblue;
+    --dark: #607d8b;
+    --light: #f7f7f7;
+    --shadow: 1px 0px 5px darkgray;
+  }
+  .section {
+    padding: 15px 30px;
+  }
+  body {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968260.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .articles {
+      opacity: 0.8;
+  }
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+    grid-gap: 15px 15px;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .grid-row .grid-item span {
+    padding: 10px;
+    line-height: 1;
+  }
+  .grid-row .grid-item h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .grid-row .grid-item:hover {
+    filter: contrast(0.7);
+  }
+  .grid-row .grid-item {
+    transition: filter 0.5s ease;
+    display: flex;
+    cursor: pointer;
+    background: var(--light);
+    box-shadow: var(--shadow);
+    color: var(--dark);
+    text-align: center;
+    font-family: sans-serif;
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  
