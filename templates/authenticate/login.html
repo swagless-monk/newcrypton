@@ -1,0 +1,70 @@
+{% extends 'authenticate/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card login-form text-center">
+    <form method="POST">
+        <h1>WELCOME</h1>
+        <br>
+        {% csrf_token %}
+        <div class="mb-3">
+            <input type="text" class="form-control" name="username" placeholder="Username">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="password" name="password" rows="3" placeholder="*******"/>
+        </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                <label class="form-check-label" for="flexCheckDefault" style="float: left;">
+                    Remember me?
+                </label>
+            </div>
+
+        <div class="center">
+            <button class="Btn btn" type="submit" value="register">
+                <svg width="auto" height="40px" viewBox="0 0 130 40" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>Login</span>
+            </button>
+        </div>
+
+    </form>
+
+    <hr style="width: 80%; margin-left: auto; margin-right: auto;">
+
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'registration' %}">
+                <div class="center">
+                    <button class="Btn btn" type="submit" value="register">
+                        <svg width="auto" height="40px" viewBox="0 0 130 40" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>need an account?</span>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{% url 'reset_password' %}">
+                <div class="center">
+                    <button class="Btn btn" type="submit" value="register">
+                        <svg width="auto" height="40px" viewBox="0 0 130 40" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>forgot password?</span>
+                    </button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+<link rel="stylesheet" href="{% static '/css/login.css' %}" >
+<link rel="stylesheet" href="{% static '/css/base/button.css' %}" >
+
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'authenticate/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container main text-center" style="margin-top: 1%;">
+    <div class="row" style="justify-content: center; text-align: center;">
+        <div class="col">
+            <button class="btn btn-success Btn">CREATION</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success Btn">CURRENT EVENTS</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-success Btn">FUTURE EVENTS</button>
+        </div>
+    </div>
+    <div class="container text-center articles">
+        <div class="section">
+            <div class="container">
+              <div class="grid-row">
+                <div class="grid-item">
+                  <span>
+                    <h3>Crypto Before Bitcoin</h3>
+                    <p>There were actually digital currencies before Bitcoin.</p>
+                  </span>
+                  <img src="https://www.kareseniors.com.au/wp-content/uploads/2021/08/About-Us.jpg" />
+                </div>
+                <div class="grid-item">
+                  <span>
+                    <h3>Let There Be... Bitcoin</h3>
+                    <p>Bitcoin has been recorded in its theoretical form.</p>
+                  </span>
+                  <img src="https://www.kareseniors.com.au/wp-content/uploads/2021/08/About-Us.jpg" />
+                </div>
+                <div class="grid-item">
+                  <span>
+                    <h3>Satoshi Nakamoto</h3>
+                    <p>The quasi-anonymous creator has left a trail of questions.</p>
+                  </span> <img src="https://www.kareseniors.com.au/wp-content/uploads/2021/08/About-Us.jpg" />
+                </div>          
+                <div class="grid-item">
+                  <span>
+                    <h3>FOUR</h3>
+                    <p>Lorem lorem lorem lorem lorem lorem lorem lorem.</p>
+                  </span> <img src="https://www.kareseniors.com.au/wp-content/uploads/2021/08/About-Us.jpg" />
+                </div>          
+                <div class="grid-item">
+                  <span>
+                    <h3>FIVE</h3>
+                    <p>Lorem lorem lorem lorem lorem lorem lorem lorem.</p>
+                  </span> <img src="https://www.kareseniors.com.au/wp-content/uploads/2021/08/About-Us.jpg" />
+                </div>          
+                <div class="grid-item">
+                  <span>
+                    <h3>SIX</h3>
+                    <p>Lorem lorem lorem lorem lorem lorem lorem lorem.</p>
+                  </span> <img src="https://www.kareseniors.com.au/wp-content/uploads/2021/08/About-Us.jpg" />
+                </div>          
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="{% static '/css/bitcoin/bitcoin.css' %}" >
+<link rel="stylesheet" href="{% static '/css/base/button.css' %}" >
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'authenticate/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card register-form text-center">
+    <form method="POST" action="{% url 'registration' %}">
+        <h2>SIGN UP</h2>
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <div class="center">
+            <button class="Btn btn" type="submit" value="register">
+                <svg width="auto" height="40px" viewBox="0 0 130 40" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>Sign Up</span>
+            </button>
+        </div>
+        <br>
+    </form>
+
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'login' %}">
+                <div class="center">
+                    <button class="Btn btn">
+                        <svg width="auto" height="40px" viewBox="0 0 130 40" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>Have an account?</span>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{% url 'reset_password' %}">
+                <div class="center">
+                    <button class="Btn btn">
+                        <svg width="auto" height="40px" viewBox="0 0 130 40" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>Forgot Password?</span>
+                    </button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+{% if form.errors %}
+        <div class="container">
+            <div class="alert alert-danger" role="alert" style="background: linear-gradient(135deg, black, #4f0205 40%, #800e12, #b51b20, #f5363c);">
+                <p class="mb-0"><i class="fa-solid fa-xmark" style="fill: white;"></i> &nbsp; REGISRTATION ERROR </p>
+            </div>
+        </div>
+    <script type="text/javascript" src="{% static '/js/base/loginAlertsAction.js' %}"></script>
+{% endif %}
+
+<link rel="stylesheet" href="{% static '/css/register.css' %}" >
+<link rel="stylesheet" href="{% static '/css/base/button.css' %}" >
+<style>
+    a {
+        text-decoration: none !important;
+    }
+</style>
+
+{% endblock %}
