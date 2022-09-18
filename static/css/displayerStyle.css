@@ -1,0 +1,107 @@
+/* DISPLAYER LIGHTS */
+.LampPosition {
+    margin-left: 0%;
+    margin-top: -4%;
+}
+.Lamp {
+    width: 70px;
+    height: 100rem;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 25%, rgba(82, 168, 98, 0) 50%);
+    top:-220vh;
+    transform: perspective(40vh) skew(10deg, 10deg) rotate(0deg);
+    animation-name: shift;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: reverse;
+    animation-direction: alternate;
+}
+.Lamp3 {
+    width: 70px;
+    height: 100rem;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 25%, rgba(82, 168, 98, 0) 50%);
+    top:-220vh;
+    transform: perspective(40vh) skew(10deg, 10deg) rotate(50deg);
+    position: 'absolute';
+    animation-name: shift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: reverse;
+    animation-direction: alternate;
+    margin-left: 10%;
+}
+.Lamp5 {
+    width: 70px;
+    height: 100rem;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 25%, rgba(82, 168, 98, 0) 50%);
+    top:-220vh;
+    transform: perspective(40vh) skew(10deg, 10deg) rotate(-20deg);
+    position: 'absolute';
+    animation-name: shift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: reverse;
+    animation-direction: alternate;
+    margin-left: -15%;
+}
+.Lamp7 {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 42%, rgba(82, 168, 98, 0) 50%);
+    top:0vh;
+    left:55vh;
+    transform: perspective(30vh) rotateY(180deg) rotateX(30deg);
+    margin-top: -5%;
+    margin-left: -6%;
+}
+.Lamp2 {
+    width: 70px;
+    height: 100rem;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 25%, rgba(82, 168, 98, 0) 50%);
+    top:-220vh;
+    transform: perspective(40vh) skew(10deg, 10deg) rotate(-45deg);
+    position: 'absolute';
+    animation-name: shift;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: reverse;
+    animation-direction: alternate-reverse;
+    margin-left: -14%;
+}
+.Lamp4 {
+    width: 70px;
+    height: 100rem;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 25%, rgba(82, 168, 98, 0) 50%);
+    top:-220vh;
+    transform: perspective(40vh) skew(10deg, 10deg) rotate(23deg);
+    position: 'absolute';
+    animation-name: shift;
+    animation-duration: 2.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: normal;
+    animation-direction: alternate-reverse;
+    margin-left: -11%;
+}
+.Lamp6 {
+    width: 70px;
+    height: 100rem;
+    background-image: radial-gradient(ellipse, rgba(82, 168, 109, 0.5), rgba(82, 168, 91, 0.2) 25%, rgba(82, 168, 98, 0) 50%);
+    top:-220vh;
+    transform: perspective(40vh) skew(10deg, 10deg) rotate(33deg);
+    position: 'absolute';
+    animation-name: shift;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: reverse;
+    animation-direction: alternate-reverse;
+    margin-left: 3%;
+}
+@keyframes shift {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.4;
+    }
+    
+}

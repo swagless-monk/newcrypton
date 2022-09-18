@@ -1,0 +1,49 @@
+.ChartContainer {
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: 96%;
+    margin-left: 30%;
+    margin-top: 0%;
+    background-color: transparent;
+    border-left: 5px solid black;
+  }
+  
+  .Data {
+    height: 20px;
+    margin-left: 3%;
+    color: black;
+    margin-bottom: 7px;
+    animation: bar-dance 5s infinite ease-in-out;
+  }
+  .Data1 {
+    background-color: green;
+    width: 175px;
+  }
+  .Data2 {
+    background-color: yellow;
+    width: 130px;
+  }
+  .Data3 {
+    background-color: blue;
+    width: 200px;
+  }
+  .Data4 {
+    background-color: orange;
+    width: 110px;
+  }
+  .Data5 {
+    background-color: red;
+    width: 250px;
+  }
+  
+  @keyframes bar-dance {
+    0%, 50%, 75%, 100% {
+      width: original;
+      opacity: 0.8;
+    }
+    20% {
+      width: 10%;
+      opacity: 0.05;
+    }
+  }

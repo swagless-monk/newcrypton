@@ -1,0 +1,108 @@
+h4 {
+    position: relative;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.02em;
+    text-shadow: 2px 2px 1em black;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
+    padding-top: 5px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.Background {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    display: grid;
+}
+
+.BackRow {
+    margin-bottom: 2%;
+    animation-play-state: paused;
+}
+
+.BackCard {
+    height: 33%;
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+    background-color: rgba(34, 110, 58, 0.5);
+    opacity: 0.5;
+    border: 2px solid rgba(49, 115, 56, 0.4);
+	outline: 2px solid rgba(44, 89, 48, 0.4);
+    box-shadow: 0 0 10px 10px rgba(44, 89, 48, 0.4);
+}
+
+/* TOP & MIDDLE ROW STLYING */
+.MidLeftCard, .TopLeftCard {
+    transform: skewY(-7deg) rotateY(10deg) rotateX(10deg) translateY(33px);
+    box-shadow: -15px 3px 20px 10px #467449;
+}
+.MidCenterCard, .TopCenterCard {
+    box-shadow: 0px 5px 20px 10px #467449;
+}
+.MidRightCard, .TopRightCard {
+    transform: skewY(7deg) rotateY(10deg) rotateX(10deg) translateY(33px);
+    box-shadow: 15px 3px 20px 10px #467449;
+}
+
+.BackCard:hover {
+    animation-play-state: running;
+}
+.BackCard:hover .arm1 {
+    transition: 0.3s ease-in-out;
+    height: 100px;
+    width: 25px;
+    margin-top: -130px;
+    margin-left: 10px;
+}
+.BackCard:hover .arm2 {
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.64s;
+    transform: rotate(-90deg);
+    width: 25px;
+    height: 120px;
+    margin-top: -65px;
+    margin-left: 75px;
+    opacity: 1;
+}
+.BackCard:hover .text span {
+    transition-delay: 1.27s;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.02em;
+    text-shadow: 3px 3px 4px #444242;
+    text-transform: uppercase;
+    user-select: none;
+    filter: blur(0.007em);
+    padding-top: 5px;
+    font-size: 130%;
+}
+.BackCard:hover .elbow {
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.32s;
+    height: 30px;
+    width: 30px;
+}
+.BackCard:hover .text {
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.94s;
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-top: -140px;
+    margin-left: 150px;
+    opacity: 1 !important;
+    box-shadow: 0px 10px 30px 6px black;
+    transform: skew(0deg);
+    padding: 10px;
+}
+
